@@ -1,0 +1,40 @@
+.post {
+    width: 60%;
+    background-color: $color-grey-dark-5;
+    margin: auto;
+    margin-bottom: 2rem;
+    text-align: center;
+    padding-top: .5rem;
+
+    @include respond(tab-land) {
+        width: 90%;
+        padding-left: 2rem;
+    }
+
+    @include respond(phone) {
+        width: 90%;
+        padding-left: 0;
+    }
+
+    &__img {
+        width: 100%;
+        margin: 1rem 2rem;
+
+        @include respond(tab-land) {
+            margin: 1rem auto;
+        }
+    }
+
+    &__caption {
+        padding: 0 2rem 0 0;
+        text-align: left;
+        font-weight: 300;
+        font-style: italic;
+    }
+
+    &__link {
+        color: $color-link-blue;
+        margin-bottom: 2rem;
+        display: inline-block;
+    }
+}

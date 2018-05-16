@@ -1,0 +1,147 @@
+.footer {
+    height: 30vh;
+    width: 100%;
+    background-color: $color-grey-dark-5;
+    position: relative;
+
+    @include respond(tab-port) {
+        min-height: 30vh;
+        padding-bottom: 2rem;
+    }
+
+    &__p {
+        font-weight: 300;
+        font-size: 1.7rem;
+        margin: 2rem 0 0 2rem;
+        display: inline-block;
+
+        @include respond(tab-port) {
+            text-align: center;
+            width: 100%;
+            margin: 0;
+            margin-top: 1rem;
+        }
+    }
+
+    &__search {
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+
+        @include respond(tab-port) {
+            position: relative;
+            top: auto;
+            right: auto;
+            text-align: center;
+            margin: auto;
+            margin-top: 1rem;
+            width: 90%;
+        }
+    }
+
+    &__form {
+
+        &--input {
+            padding: 1rem;
+            border-radius: 0;
+            border-top-left-radius: .5rem;
+            border-bottom-left-radius: .5rem;
+            border-style: none;
+            border-bottom: 2px solid transparent;
+            transition: all .3s ease-in-out;
+
+            &:focus {
+                outline: none;
+                border-bottom: 2px solid $color-primary;
+                padding: 1rem 4rem 1rem 2rem;
+            }
+        }
+
+        &--submit {
+            margin-left: -.5rem;
+            border-radius: 0;
+            border-top-right-radius: .5rem;
+            border-bottom-right-radius: .5rem;
+            padding: 1rem 2rem;
+            background-color: $color-grey-light-3;
+            border-style: none;
+            border-bottom: 2px solid transparent;
+            -webkit-appearance: none;
+
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+
+    &__nav {
+        position: absolute;
+        top: calc(2rem + 1.4rem + 1rem + 1rem + .2rem + 2rem);
+        //calc(2rem + 1.4rem + 1rem + 1rem + .2rem)
+        right: 2rem;
+
+        @include respond(tab-port) {
+            position: relative;
+            text-align: center;
+            top: auto;
+            left: auto;
+            margin-top: 2rem;
+            display: block;
+        }
+    }
+
+    &__ul {
+        margin-left: 4rem;
+    }
+
+    &__li {
+        list-style-type: none;
+        display: inline-block;
+        margin: 0 2rem;
+
+        @include respond(tab-port) {
+            margin: 0;
+            &:not(:first-of-type) {
+                margin-left: 1rem;
+            }
+            
+            &:not(:last-of-type) {
+                margin-right: 1rem;
+            }
+        }
+    }
+
+    &__a  {
+        color: $color-white;
+    }
+
+    &__cta {
+        bottom: 4rem;
+        left: 2rem;
+        position: absolute;
+
+        @include respond(tab-port) {
+            position: relative;
+            bottom: auto;
+            left: auto;
+            margin-bottom: 1.5rem;
+            margin-left: 1.5rem;
+        }
+
+        &--link {
+            color: $color-white;
+            text-decoration: none;
+            margin-left: 2rem;
+            font-weight: 300;
+            background-color: $color-primary;
+            padding: 1rem 2rem;
+            transition: all .2s;
+            display: inline-block;
+            margin-top: 1.5rem;
+
+            &:hover {
+                background-color: $color-primary-dark;
+            }
+        }
+    }
+}

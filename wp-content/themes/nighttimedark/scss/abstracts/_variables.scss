@@ -1,0 +1,30 @@
+$color-primary: #f39c12;
+$color-primary-light: lighten($color-primary, 10%);
+$color-primary-dark: darken($color-primary, 10%);
+
+$color-grey-light-1: #f7f7f7;
+$color-grey-light-2: #eee;
+$color-grey-light-3: #ddd;
+
+$color-grey-dark-1: #777;
+$color-grey-dark-2: #999;
+$color-grey-dark-3: #333;
+$color-grey-dark-4: #555;
+$color-grey-dark-5: #222;
+
+$color-white: #fff;
+$color-black: #000;
+
+$color-link-blue: #3f6bfc;
+
+
+// Grid
+
+$grid-width: 114rem;
+$gutter-vertical: 8rem;
+$gutter-vertical-small: 6rem;
+$gutter-horizontal: 6rem;
+
+// Font 
+$default-font-size: 1.6rem;
+$default-font-family: 'Source Sans Pro', sans-serif;
