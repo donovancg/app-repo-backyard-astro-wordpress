@@ -405,26 +405,28 @@ form > * {
   position: absolute;
   top: 3rem;
   right: 3rem; }
-  .nav__li {
+
+  .nav li {
     list-style-type: none;
     display: inline;
     padding: 1rem;
     margin: 0 2rem; }
     @media only screen and (max-width: 75em) {
-      .nav__li {
+      .nav li {
         margin: 0 1rem; } }
     @media only screen and (max-width: 37.5em) {
-      .nav__li {
+      .nav li {
         margin: 0 .5rem; } }
-  .nav__a {
+  .nav li a {
     color: #fff;
     padding: .5rem 0;
     border-bottom: 2px solid transparent;
+    text-decoration: none;
     transition: all .2s; }
     .nav__a--select {
       border-bottom: 2px solid rgba(255, 255, 255, 0.8);
       transition: all .2s; }
-    .nav__a:hover {
+    .nav a:hover {
       border-bottom: 2px solid #fff; }
 
 .section-about .about {
